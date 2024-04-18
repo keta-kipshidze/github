@@ -6,37 +6,100 @@
     <title>github</title>
 </head>
 <body>
-   <h1>Github Registration</h1>
+    <style>
+        body {
+          background-color: rgb(60, 153, 196);;
+          color: aliceblue;
+          text-align: center;
+          font-style:oblique
+        }
+      </style>
+   <h1>Welcome to Tech Space</h1>
+   <h2>Survey Form</h2>
+   <h3>Thank you for taking the time to help us improve the platform</h3>
    <form>
     <label for="username">Your Name:</label>
     <input type="text" id="username" placeholder="Your name"/>
     <br />
+    <br />
     <label for="email">Email:</label>
     <input type="email" id="email" placeholder="Email"/>
     <br />
-    <label for="about">About me:</label>
-    <textarea cols="20" rows="3" id="about"></textarea>
+    <br />
+    <label for="Date of birth">Date of Birth (Optional)</label>
+    <input type="date" id="Age" placeholder="Date of birth"/>
     <h3>Gender:</h3>
     <input type="radio" id="male" value="male" name="gender"/>
     <label for="male">Male</label>
     <input type="radio" id="female" value="female" name="gender"/>
     <label for="female">Female</label>
     <br />
-    <h3>Hobby</h3>
-    <input type="checkbox" id="reading" value="reading" />
-    <label for="reading">reading</label>
-    <input type="checkbox" id="coding" value="coding" />
-    <label for="coding">coding</label>
-    <h3>Your car:</h3>
-    <select name="car" id="car">
-        <option value="Volvo">Volvo</option>
-        <option value="Nissan">Nissan</option>
-        <option value="BMW">BMW</option>
+    <h3>Which option best describes your current role?</h3>
+    <select name="Role" id="Role">
+        <option value="Student">Student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="Full time learner">Full time learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
     </select>
     <br />
-    <label for="password">Password:</label>
-    <input type="password" id="password" />
-    <button>Registration</button>
+    <h3>Would you recommend freeCodeCamp to a friend?</h3>
+    <input type="radio" id="definitely" value="definitely" name="Would you recommend freeCodeCamp to a friend?"/>
+    <label for="definitely">Definitely</label>
+    <input type="radio" id="maybe" value="maybe" name="Would you recommend freeCodeCamp to a friend?"/>
+    <label for="maybe">Maybe</label>
+    <input type="radio" id="not sure" value="not sure" name="Would you recommend freeCodeCamp to a friend?"/>
+    <label for="not sure">Not sure</label>
+    <br />
+    <h3>What is your favorite feature of freeCodeCamp?</h3>
+    <select name="Feature" id="Feature">
+        <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="Open Source">Open Source</option>
+    </select>
+    <h3>What would you like to see improved? (Check all that apply)</h3>
+    <input type="checkbox" id="Front-end Projects" value="Front-end Projects" />
+    <label for="Front-end Projects">Front-end Projects</label>
+    <br />
+    <input type="checkbox" id="Back-end Projects" value="Back-end Projects" />
+    <label for="Back-end Projects">Back-end Projects</label>
+    <br />
+    <input type="checkbox" id="Data Visualization" value="Data Visualization" />
+    <label for="Data Visualization">Data Visualization</label>
+    <br />
+    <input type="checkbox" id="Challenges" value="Challenges" />
+    <label for="Challenges">Challenges</label>
+    <br />
+    <input type="checkbox" id="Open Source Community" value="Open Source Community" />
+    <label for="Open Source Community">Open Source Community</label>
+    <br />
+    <input type="checkbox" id="Gitter help rooms" value="Gitter help rooms" />
+    <label for="Gitter help rooms">Gitter help rooms</label>
+    <br />
+    <input type="checkbox" id="Videos" value="Videos" />
+    <label for="Videos">Videos</label>
+    <br />
+    <input type="checkbox" id="City Meetups" value="City Meetups" />
+    <label for="City Meetups">City Meetups</label>
+    <br />
+    <input type="checkbox" id="Wiki" value="Wiki" />
+    <label for="Wiki">Wiki</label>
+    <br />
+    <input type="checkbox" id="Forum" value="Forum" />
+    <label for="Forum">Forum</label>
+    <br />
+    <input type="checkbox" id="Additional Courses" value="Additional Courses" />
+    <label for="Additional Courses">Additional Courses</label>
+    <br />
+    <br />
+    <label for="Comments">Any comments or suggestions?</label>
+    <br />
+    <br />
+    <textarea cols="50" rows="5" id="Comments" placeholder="Enter your comment here..."></textarea>
+    <br />
+    <br />
+    <button type="submit">Submit</button>
    </form> 
 </body>
 </html>
